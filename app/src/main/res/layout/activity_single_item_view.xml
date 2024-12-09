@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <!-- Book Image -->
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/carpet_cleaning"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Book Image"
+        android:layout_marginTop="60dp"
+        />
+
+    <!-- Book Title -->
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_image"
+        android:layout_marginTop="16dp"
+        android:text="Book Title"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Book Author -->
+    <TextView
+        android:id="@+id/detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_title"
+        android:layout_marginTop="8dp"
+        android:text="Book Author"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Book Description -->
+    <TextView
+        android:id="@+id/detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_price"
+        android:layout_marginTop="16dp"
+        android:text="Book Description"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:lineSpacingExtra="4dp"
+        android:scrollbars="vertical"/>
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Bookings"
+        android:layout_below="@id/detail_description"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

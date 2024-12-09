@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME SCREEN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+
+        android:iconifiedByDefault="false"
+        android:queryHint="Search ..."
+
+        android:focusable="false"
+        android:closeIcon="@drawable/baseline_clear_24"
+        android:background="@drawable/search_background"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="Trendings"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_View"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:padding="6dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="All Services"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+
+        android:id="@+id/gridView"
+
+        />
+
+
+
+
+
+
+</LinearLayout>

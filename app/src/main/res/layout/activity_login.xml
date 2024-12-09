@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:paddingTop="35dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+    <!--for user name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textSize="23dp"
+
+        android:textStyle="bold"
+        android:paddingTop="35dp"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:paddingLeft="20dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="30dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:id="@+id/userName"
+        android:hint="Enter your name"
+        android:background="@drawable/custom_input"
+        />
+
+    <!-- password-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="23dp"
+
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:paddingLeft="20dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Enter Password"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/pass"
+        android:background="@drawable/custom_input"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="24dp"
+        android:id="@+id/login"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="24dp"
+        android:id="@+id/signup"
+        />
+</LinearLayout>
